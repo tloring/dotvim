@@ -87,3 +87,5 @@ autocmd BufReadPost *
   \   exe "normal g`\"" |
   \ endif
 
+au BufReadCmd *.svc     call tar#Browse(expand("<amatch>"))
+au BufReadCmd *.svc.gz  call tar#Browse(expand("<amatch>"))
