@@ -50,6 +50,7 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 
 " Or use vividchalk
 colorscheme topfunky-light
+" colorscheme solarized
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
@@ -89,3 +90,7 @@ autocmd BufReadPost *
 
 au BufReadCmd *.svc     call tar#Browse(expand("<amatch>"))
 au BufReadCmd *.svc.gz  call tar#Browse(expand("<amatch>"))
+
+" More Instantly Better vim
+" http://programming.oreilly.com/2013/10/more-instantly-better-vim.html?utm_source=statuscode&utm_medium=email
+nnoremap ; :
